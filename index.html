@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Basics</title>
+    <title>Enhanced Particle System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <canvas id="canvas"></canvas>
+
+    <div class="stats" id="stats">
+        <div>Particles: <span id="particleCount">0</span></div>
+        <div>FPS: <span id="fps">0</span></div>
+        <div>Mouse: <span id="mousePos">0, 0</span></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

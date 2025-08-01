@@ -1,14 +1,26 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Arial', sans-serif;
 }
 
 canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: black;
+    display: block;
+    cursor: crosshair;
+}
+
+.stats {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(80, 80, 80, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 12px;
+    z-index: 1000;
 }
